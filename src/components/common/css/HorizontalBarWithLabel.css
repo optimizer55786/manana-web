@@ -1,0 +1,25 @@
+.hr-label {
+  position: relative;
+  height: 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.hr-label div {
+  position: absolute;
+  top: 0.6rem;
+  left: 0;
+  right: 0;
+  margin: 0 !important;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.hr-label span {
+  position: absolute;
+  top: 0;
+  background: #fff;
+  padding: 0 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}

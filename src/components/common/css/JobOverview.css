@@ -1,0 +1,22 @@
+.job-overview > div {
+  border-bottom: 1px solid #ebe0de;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  max-width: 500px;
+}
+
+.job-overview > div:last-child {
+  border-bottom: none;
+}
+
+.job-overview textarea {
+  height: 120px;
+}
+
+.job-overview button {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  margin: 1rem 0;
+  text-decoration: none;
+}

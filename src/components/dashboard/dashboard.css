@@ -1,0 +1,56 @@
+.dashboard .card{
+    box-shadow: 0 6px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.dashboard .card .card-icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fef6f3;
+    border-radius: 50%;
+    color: #b59b9b;
+}
+.dashboard .card .card-icon .MuiSvgIcon-root{
+    font-size: 2rem;
+}
+.dashboard .card .card-title{
+    color: #4a4a4a;
+    font-weight: bold;
+}
+.dashboard .card .card-text{
+    color:#356f7c;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.border-right{
+    border-right: 1px solid #e0d4d4;
+}
+.triangle-up{
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid black;
+}
+.triangle-up.danger{
+    border-bottom-color: #e70c0c;
+}
+.triangle-up.success{
+    border-bottom-color: #356f7c;
+}
+.recharts-layer.recharts-cartesian-axis-tick line{
+    display: none;
+}
+.recharts-layer.recharts-cartesian-axis line{
+    stroke: #f3ebea;
+}
+.xAxis .recharts-cartesian-axis-ticks{
+    transform: translateY(13px);
+}
+.yAxis .recharts-cartesian-axis-ticks{
+    transform: translateX(-13px);
+}
+.recharts-layer.recharts-cartesian-axis-tick text{
+
+}

@@ -1,0 +1,18 @@
+.button-list {
+  border-top: 1px solid var(--border-color);
+  cursor: pointer;
+}
+
+.button-list-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+}
+
+.button-list.button-list-hover .button-list-item {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.button-list.button-list-hover .button-list-item:hover {
+  background-color: #f8f2f1 !important;
+}

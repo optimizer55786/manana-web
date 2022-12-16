@@ -1,0 +1,23 @@
+.setting-group {
+    margin-top: 50px;
+}
+.header-row {
+    border-bottom: solid 1px var(--border-color);
+    padding-bottom: 8px;
+    margin: 0;
+}
+.setting-row {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: solid 1px var(--border-color);
+    padding: 13px 0px;
+}
+.no-padding {
+    padding: 0px;
+}
+.setting-title {
+    font-weight: 600;
+}
+.subtitle1 {
+    font-weight: 600;
+}

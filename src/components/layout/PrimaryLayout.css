@@ -1,0 +1,445 @@
+:root {
+  --header-bg-color: #ffe2d7;
+  --primary-color: #205b68;
+  --light-primary-color: #e1e7e8;
+  --secondary-color: #fd7060;
+  --light-secondary-color: #fef6f3;
+  --med-secondary-color: #ffc8b4;
+  --text-color: #4a4a4a;
+  --muted-text-color: #857070;
+  --border-color: #ebe0de;
+
+  /* OVERRIDE BOOTSTRAP VARS */
+  --bs-blue: #205b68;
+  --bs-primary: #205b68;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Cabin", sans-serif !important;
+}
+
+/* ========================================================================= */
+/* DESIGNER TOPOGRAPHY OVERRIDES */
+/* ========================================================================= */
+
+h1 {
+  color: var(--primary-color) !important;
+  font-size: 44px !important;
+  font-weight: 700 !important;
+  line-height: 135% !important;
+}
+
+h2 {
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  line-height: 125% !important;
+}
+
+h3 {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  line-height: 125% !important;
+}
+
+.subtitle1 {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.subtitle2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.body1 {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 20px;
+}
+
+.body2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+label,
+.label {
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+  line-height: 20px !important;
+  font-weight: 500 !important;
+}
+
+label.form-check-label {
+  font-size: 18px !important;
+  text-transform: inherit !important;
+  line-height: 36px !important;
+  font-weight: 500 !important;
+}
+
+.text-muted {
+  color: #857070 !important;
+}
+
+small {
+  font-size: 14px !important;
+  text-transform: lowercase !important;
+  line-height: 20px !important;
+  font-weight: 300 !important;
+}
+
+.prompt {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.cta {
+  color: #205b68;
+  font-size: 16px !important;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+a,
+a:visited {
+  color: var(--primary-color);
+}
+
+footer {
+  color: #fff;
+  padding-top: 2rem;
+}
+
+footer .links {
+  display: flex;
+}
+
+footer .links a {
+  flex: 1;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer .links a:first-child {
+  text-align: left;
+}
+
+footer .links a:last-child {
+  text-align: right;
+}
+
+/* ========================================================================= */
+/* LAYOUT SPECIFIC CLASSES */
+/* ========================================================================= */
+
+.page-header {
+  min-height: 600px;
+  padding: 3em 0em !important;
+  background-color: var(--header-bg-color) !important;
+  text-align: left !important;
+}
+
+.page-header__logo {
+  margin: 0;
+  padding: 0;
+  max-width: 225px;
+}
+
+.page-header.mobile {
+  min-height: 350px;
+}
+
+.page-header .main-nav {
+  margin-bottom: 2rem;
+}
+
+.page-header .main-nav .btn {
+  margin-left: 1.5em;
+  font-weight: bold !important;
+}
+
+.btn.add-padding {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.page-header .main-nav .btn.btn-link {
+  text-decoration: none !important;
+}
+
+.page-header__title {
+  margin-bottom: 0 !important;
+  margin-top: 1.5em !important;
+}
+
+.page-header__title img {
+  max-width: 275px;
+}
+
+.page-header__title.mobile {
+  font-size: 2em !important;
+  margin-top: 1.5em !important;
+}
+
+.page-header__sub-header {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.page-header__sub-header.mobile {
+  font-size: 1.5em !important;
+  margin-top: 0.5em;
+}
+
+.content-block {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 15px;
+}
+
+/* ========================================================================= */
+/* BOOTSTRAP OVERRIDES */
+/* ========================================================================= */
+
+.btn {
+  border-radius: 25px !important;
+}
+
+.btn-group > .btn {
+  border-radius: 0 !important;
+}
+
+.btn-group > .btn:first-child {
+  border-top-left-radius: 25px !important;
+  border-bottom-left-radius: 25px !important;
+}
+
+.btn-group > .btn:last-child {
+  border-top-right-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
+}
+
+.btn-group.full-width {
+  width: 100%;
+}
+
+.btn-group.full-width > .btn {
+  flex: 1 !important;
+}
+
+.btn-primary {
+  border: 1px solid var(--primary-color) !important;
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  color: #fff !important;
+  background-color: var(--primary-color) !important;
+}
+
+.btn-secondary {
+  border: 1px solid var(--border-color) !important;
+  background-color: var(--light-secondary-color) !important;
+  color: var(--text-color) !important;
+}
+
+.btn-outline-secondary {
+  border-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active,
+.btn-outline-secondary:focus {
+  color: var(--text-color) !important;
+  background-color: var(--light-secondary-color) !important;
+}
+
+.btn-link {
+  color: var(--primary-color) !important;
+}
+
+.btn.btn-circle-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  font-weight: 700;
+}
+
+label.form-label {
+  font-weight: 500;
+  font-size: 1.5rem;
+  display: block;
+  color: var(--text-color) !important;
+}
+
+input.form-control,
+select.form-select {
+  font-size: 1.15rem;
+  display: inline-block;
+}
+
+.form-check-input {
+  height: 1.5em !important;
+  width: 1.5em !important;
+}
+
+.form-check-label {
+  margin-left: 1rem;
+  font-size: 1.25rem;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+.badge.bg-secondary {
+  background-color: var(--med-secondary-color) !important;
+  color: var(--text-color);
+}
+
+.badge.badge-unread {
+  border-radius: 50%;
+  background-color: var(--secondary-color) !important;
+}
+
+.btn-text-primary {
+  color: var(--primary-color);
+}
+.text-grey {
+  color: var(--muted-text-color);
+}
+/* ========================================================================= */
+/* GLOBAL COMPONENT OVERRIDES */
+/* ========================================================================= */
+
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+}
+
+/* ========================================================================= */
+/* GLOBAL ITEMS */
+/* ========================================================================= */
+
+.profile-photo,
+.profile-photo-lg {
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  background-color: var(--header-bg-color);
+  margin: 1rem 0;
+}
+
+.profile-photo-sm {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: var(--header-bg-color);
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.profile-photo-md {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: var(--header-bg-color);
+  margin: 0;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 18px;
+}
+
+.profile-photo-btn {
+  width: 150px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.field-list-item {
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+div.divider {
+  border-bottom: 1px solid var(--border-color);
+  margin: 1.5rem 0;
+}
+
+.wizard-overlay {
+  position: relative;
+  margin: 1rem -3rem;
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.wizard-overlay.absolute {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+  z-index: 99;
+}
+
+.wizard-overlay__close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  line-height: 1rem;
+}
+
+.wizard-overlay .form-group {
+  margin-bottom: 1rem;
+}
+
+.wizard-overlay .form-check {
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.spinner {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
